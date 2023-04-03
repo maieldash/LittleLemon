@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section>
+  <article>
+    
+    <h1>{{menuItem.name}}</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <p>
+            <p>${{ menuItem.price }}.00</p>
+            <p>{{ menuItem.description }}</p>
+        </p>
+      </div>
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <figure class="figure">
+            <img  
+            src="{{ menuItem.image.url }}"
+            alt="{{menuItem.name}}">
+          <figcaption class="figure-caption">
+            
+          </figcaption>
+        </figure>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}
