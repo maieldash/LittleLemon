@@ -4,10 +4,10 @@
 <h1>Menu</h1>
 <!--Begin col-->
 <div class="column">
-    {% for item in menuItems %}
+    {% for item in menuItems|dictsort:"name" %}
     <p>
     <a href="{% url 'menuItem' item.name %}">{{item.name}}</a>
-    <span class="menu-price">${{ item.price }}.00</span>        </span>
+    <span class="menu-price">${{ item.price }}.00</span>
     </p>
     {% endfor %}
 </div>

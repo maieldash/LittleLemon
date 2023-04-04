@@ -182,18 +182,14 @@ footer {
 }
 
 footer img {
-    max-width: 50%;
+    max-width: 20%;
+    max-height: 50%;
 }
 
 footer p {
-    border-top: #333333;
-    border-style: solid;
-    border-width: 0.1rem;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    text-align: right;
-    padding-top: 1rem;;
+    text-align:left;
+    padding-top: 2rem;
+    font-size: small;
 }
 
 .row {
