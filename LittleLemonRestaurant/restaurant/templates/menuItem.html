@@ -4,8 +4,11 @@
 
 <section>
   <article>
+    <span>
+      <a href="{% url 'home' %}">Home</a> / <a href="{% url 'menu' %}">Menu</a>/
+      <h1>{{menuItem.name}}</h1>
+    </span>
     
-    <h1>{{menuItem.name}}</h1>
     <!--Begin row-->
     <div class="row">
       <!--Begin col-->
@@ -20,9 +23,10 @@
       <!--Begin col-->
       <div class="column">
         <figure class="figure">
-            <img  
-            src="{{ menuItem.image.url }}"
-            alt="{{menuItem.name}}">
+          <img  
+          src="{{ menuItem.image.url }}"
+          alt="{{menuItem.name}}">
+
           <figcaption class="figure-caption">
             
           </figcaption>
