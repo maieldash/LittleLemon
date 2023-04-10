@@ -2,4 +2,5 @@
 Django App for LittleLemon Restaurant
 
 ![Screenshot](Home.png)
-![Screenshot](MenuItem.png)
+
+![Screenshot](MenuItem.PNG)
